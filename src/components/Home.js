@@ -1,7 +1,8 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import "./Home.css";
 
-import PersonAddIcon from '@mui/icons-material/PersonAdd';
+//import PersonAddIcon from '@mui/icons-material/PersonAdd';
 // import { Navigate } from "react-router-dom";
 
 function Home() {
@@ -106,8 +107,8 @@ function Home() {
                                     <Route exact path="/signin" element={<Example />} />
                                 </Routes>
                             </Router> */}
-                            <button >
-                                <Link to="/signin"> <PersonAddIcon/></Link>
+                            <button  className='btn btn-outline-success"'>
+                                <Link to="/signin"> Account</Link>
                             </button> 
 
                         </div>

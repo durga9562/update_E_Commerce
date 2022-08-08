@@ -4,11 +4,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import './App.css';
 
 //Bootstrap
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 //import Example from './components/Example';
 import Home from './components/Home';
 import Account from './components/account/Account';
-//import 'bootstrap/dist/js/bootstrap.min.js';
+import 'bootstrap/dist/js/bootstrap.min.js';
 
 
 
@@ -64,6 +64,7 @@ export default function App() {
                                 <Routes>
                                     <Route path="/" element={<Home/>}/>
                                     <Route exact path="/signin" element={<Account/>} />
+                                    {/* <Route exact path="/" element={<Home/>}/> */}
                                 </Routes>
                             </Router>
                             {/* <button >

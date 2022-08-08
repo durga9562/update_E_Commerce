@@ -2,7 +2,8 @@ import React from 'react'
 //import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Registration from './Registration';
 import "./Account.css";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
+// import "../node_modules/bootstrap/dist/css/bootstrap.css";
+// import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 
 
