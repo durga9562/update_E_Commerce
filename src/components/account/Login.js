@@ -6,11 +6,14 @@ import { Link } from "react-router-dom"
 import FormInput from './formInput/FormInput';
 import axios from "axios";
 //import "./App.js";
-
+import {useNavigate} from "react-router-dom"
+//import {useHistory} from "react-router-dom"
 
 
 function Login() {
     //const [getCustomers,setGetCustomers] = useState([]);
+    const Navigate = useNavigate();
+    // const history = useHistory();
 
     const [logins, setLogins] = useState({
         email: "",
@@ -37,7 +40,8 @@ function Login() {
                         localStorage.setItem("username", res.email)
                         localStorage.setItem("password", res.password)
                         alert("Sucessfully login into your account  " + res.email);
-                        window.location.replace("/")
+                       Navigate("/");
+                    // history.push("/");
                      }//else{
                     //      alert(res.username+" on this name there is no account register");
                     //  }

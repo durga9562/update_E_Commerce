@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 import "./Home.css";
 
 //import PersonAddIcon from '@mui/icons-material/PersonAdd';
@@ -12,8 +12,8 @@ function Home() {
     //     return <Navigate to="/signin" />
     // }
 
-  return (
-    <div className="app">
+    return (
+        <div className="app">
 
             <nav className="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
                 <div className="container text-light">
@@ -50,17 +50,25 @@ function Home() {
                         <div className="flex-fill ">
 
                             <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
-                                <li className="nav-item">
-                                    <a className="nav-link " href="#">Home</a>
+                                <li className="nav-item nav-link">
+
+                                    <Link to="/homepage"> Home</Link>
+
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">About</a>
+                                <li className="nav-item nav-link">
+
+                                    <Link to="/aboutpage"> About</Link>
+
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Shop</a>
+                                <li className="nav-item nav-link">
+
+                                    <Link to="/shoppage"> Shop</Link>
+
                                 </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="#">Contact</a>
+                                <li className="nav-item nav-link">
+
+                                    <Link to="/contactpage"> Contact</Link>
+
                                 </li>
                             </ul>
                         </div>
@@ -102,14 +110,14 @@ function Home() {
                                 <PersonAddIcon />
                             </button> */}
 
-                             {/* <Router>
+                            {/* <Router>
                                 <Routes>
                                     <Route exact path="/signin" element={<Example />} />
                                 </Routes>
                             </Router> */}
-                            <button  className='btn btn-outline-success"'>
+                            <button className='btn btn-outline-success"'>
                                 <Link to="/signin"> Account</Link>
-                            </button> 
+                            </button>
 
                         </div>
                     </div>
@@ -405,7 +413,7 @@ function Home() {
                 </div>
             </footer>
         </div>
-  )
+    )
 }
 
 export default Home

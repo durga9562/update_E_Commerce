@@ -9,6 +9,10 @@ import './App.css';
 import Home from './components/Home';
 import Account from './components/account/Account';
 import 'bootstrap/dist/js/bootstrap.min.js';
+import HomePage from './components/pages/home/HomePage';
+import AboutPage from './components/pages/about/AboutPage';
+import ShopPage from './components/pages/shop/ShopPage';
+import ContactPage from './components/pages/contact/ContactPage';
 
 
 
@@ -65,6 +69,10 @@ export default function App() {
                                     <Route path="/" element={<Home/>}/>
                                     <Route exact path="/signin" element={<Account/>} />
                                     {/* <Route exact path="/" element={<Home/>}/> */}
+                                    <Route exact path="/homepage" element={<HomePage/>}/>
+                                    <Route exact path="/aboutpage" element={<AboutPage/>}/>
+                                    <Route exact path="/shoppage" element={<ShopPage/>}/>
+                                    <Route exact path="/contactpage" element={<ContactPage/>}/>
                                 </Routes>
                             </Router>
                             {/* <button >
